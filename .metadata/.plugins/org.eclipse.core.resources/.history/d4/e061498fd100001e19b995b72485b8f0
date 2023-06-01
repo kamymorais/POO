@@ -12,19 +12,23 @@ public class AtividadeAreaTriangulo {
 		Scanner sc = new Scanner (System.in);
 		AreaTriangulo medidas = new AreaTriangulo ();
 		
-	
+		double primeiraArea ;
+		double segundaArea;
+		double terceiraArea;
+		
 		System.out.print("Qual a medida da 1ª área: ");
-		medidas.x = sc.nextDouble();
+		primeiraArea = sc.nextDouble();
 		
 		System.out.print("Qual a medida da 2ª área: ");
-		medidas.y = sc.nextDouble();
+		segundaArea = sc.nextDouble();
 		
 		System.out.print("Qual a medida da 3ª área: ");
-		medidas.z = sc.nextDouble();
+		terceiraArea = sc.nextDouble();
 		
 		
-			
-		System.out.println(medidas.resultado ());
+		medidas.calculo(primeiraArea, segundaArea, terceiraArea);
+		
+		System.out.println("O tipo de triângulo é: " + medidas.tipoTriangulo);
 	}
 
 }

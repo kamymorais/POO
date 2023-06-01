@@ -15,16 +15,16 @@ public class AreaTriangulo {
 		String tipoTriangulo = "";
 		
 		if (x==y && y==z) {
-			tipoTriangulo = "Triângulo equilátero";
+			tipoTriangulo = "Triângulo Equilateral";
 		}
 		else if (x==y || x == z || y == z) {
-			tipoTriangulo = "Triângulo isósceles";
+			tipoTriangulo = "Triângulo Isósceles";
 		}
 		else {
 			tipoTriangulo = "Triângulo escaleno";
 		
 		}
 		
-		return "O tipo de triângulo é: " + tipoTriangulo; 
+		return "O tipo de triângulo é" + tipoTriangulo; 
 	}
 }
