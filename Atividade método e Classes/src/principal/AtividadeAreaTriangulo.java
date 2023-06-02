@@ -22,6 +22,8 @@ public class AtividadeAreaTriangulo {
 		medidas.z = sc.nextDouble();
 
 		System.out.println(medidas.resultado());
+
+		sc.close();
 	}
 
 }

@@ -9,14 +9,12 @@ public class Program {
 
 		Televisor modo = new Televisor ();
 		
-		modo.ligarTV();
-		modo.aumentarCanal();
-		modo.aumentarVolume();
-		
-		
 		modo.desligarTV();
-		modo.diminuirCanal();
-		modo.diminuirVolume();
+		modo.ligarTV();
+		modo.desligarTV();
+		modo.ligarTV();
+		modo.desligarTV();
+
 		modo.status();
        
       
