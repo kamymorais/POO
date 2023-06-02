@@ -1,30 +1,28 @@
 package entities;
 
-
 public class AreaTriangulo {
 
-	
-	public double x ;
+	public double x;
 	public double y;
 	public double z;
-	public String tipoTriangulo ;
-	
-	public String resultado () {
-		
-		
+	public String tipoTriangulo;
+
+	public String resultado() {
+
 		String tipoTriangulo = "";
-		
-		if (x==y && y==z) {
+
+		if (x == y && y == z) {
 			tipoTriangulo = "Triângulo equilátero";
-		}
-		else if (x==y || x == z || y == z) {
+			return "O tipo de triângulo é: " + tipoTriangulo;
+		} else if (x == y || x == z || y == z) {
 			tipoTriangulo = "Triângulo isósceles";
-		}
-		else {
+			return "O tipo de triângulo é: " + tipoTriangulo;
+		} else {
 			tipoTriangulo = "Triângulo escaleno";
-		
+			return "O tipo de triângulo é: " + tipoTriangulo;
+
 		}
-		
-		return "O tipo de triângulo é: " + tipoTriangulo; 
+
+	
 	}
 }
