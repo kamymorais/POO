@@ -14,6 +14,10 @@ public class Program {
 		modo.desligarTV();
 		modo.ligarTV();
 		modo.desligarTV();
+		modo.ligarTV();
+		modo.aumentarCanal();
+		modo.aumentarCanal();
+		modo.aumentarVolume();
 
 		modo.status();
        

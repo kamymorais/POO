@@ -16,7 +16,7 @@ public class Televisor {
 
 	public void diminuirCanal() {
 
-		if (canal >= canal && canal > 0 ) {
+		if (canal >= canal && canal > 0) {
 			canal -= 1;
 		}
 	}
@@ -31,7 +31,7 @@ public class Televisor {
 
 	public void diminuirVolume() {
 
-		if (volume >= volume && volume >0) {
+		if (volume >= volume && volume > 0) {
 			volume -= 1;
 
 		}
@@ -55,8 +55,7 @@ public class Televisor {
 	public void status() {
 		if (ligada == true) {
 			System.out.println("Sua TV está ligada  " + "\nCanal: " + canal + "\nVolume: " + volume);
-		}
-		else {
+		} else {
 			System.out.println("Sua TV está desligada!! =( ");
 		}
 
