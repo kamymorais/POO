@@ -11,12 +11,12 @@ public class vfinal {
 		
 		
 
-		if (cargo.equals("S") && salario <= 5000 ) {
+		if (cargo.equals("gerente") && salario <= 5000 ) {
 			salarioFinal = (salario*0.015)+salario  ;	
 			
 		}
 		
-		else if (salario < 1500 && cargo.equals("N")) {
+		else if (salario < 1500 && cargo.equals("vendedor")) {
 			salarioFinal = (salario*0.02)+salario ;
 		}
 		else {

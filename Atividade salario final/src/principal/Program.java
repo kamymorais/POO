@@ -15,7 +15,7 @@ public class Program {
 		System.out.print("Qual o seu nome? ");
 		vReceber.nome = sc.nextLine();
 		
-		System.out.print("Você é gerente? (S ou N) ");
+		System.out.print("Qual seu cargo? ");
 		vReceber.cargo = sc.next();
 				
 		System.out.print("Qual o valor do salário: ");
