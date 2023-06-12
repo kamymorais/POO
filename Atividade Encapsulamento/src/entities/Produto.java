@@ -1,24 +1,16 @@
 package entities;
 
 public class Produto {
-	private String descricao;
-	private int quantidade;
+	
+	private String descricao ;
 	private double preco;
-	private double valorTotal;
-
-	
-	
+	private int quantidade;
+	private double valorTotal ;
 	public String getDescricao() {
 		return descricao;
 	}
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-	public int getQuantidade() {
-		return quantidade;
-	}
-	public void setQuantidade(int quantidade) {
-		this.quantidade = quantidade;
 	}
 	public double getPreco() {
 		return preco;
@@ -26,26 +18,40 @@ public class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
-	public double getValorTotal() {
-		return valorTotal;
+	public int getQuantidade() {
+		return quantidade;
 	}
-
-
-	public void incluir (double qtde) {
-		valorTotal += qtde;
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
 	}
-
-	public void retirar (double qtde) {
-		valorTotal -= qtde;
-
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
 	}
-
 	
+	public void adicionar (int qtde) {
+		this.quantidade += qtde ;
+	}
 	
-	@Override
-	public String toString () {
-		return "O valor total do seu estoque é de : " + valorTotal ;
+	public void remover (int qtde) {
+		this.quantidade -= qtde;
+	}
+	public double total () {
+		return  quantidade*preco;
 		
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Descrição: " + descricao + "\nQuantidade: " + quantidade + "\nPreço: " + preco + "\nValor total: " + total () ;
+		
+		
+		
+		
+		
+		
+		
+	}
+
 	
 }

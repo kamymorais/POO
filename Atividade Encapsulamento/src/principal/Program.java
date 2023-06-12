@@ -13,21 +13,21 @@ public class Program {
 		Produto produto = new Produto ();
 		
 		
-		System.out.print("Quantidade de produtos: ");
-		double qtde = sc.nextDouble();
-		produto.incluir(qtde);
+		System.out.print("Descrição: ");
+		produto.setDescricao(sc.nextLine());
+		
+		System.out.print("Quantidade: ");
+		int qtde = sc.nextInt();
+		produto.adicionar(qtde); 
+		produto.remover(qtde); 
 		
 		
-		System.out.print("Preço unitário: ");
-		produto.setPreco(sc.nextDouble());
-		int preco = sc.nextInt();
-		produto.setPreco(preco);
+		System.out.print("Preço: ");
+		double valor = sc.nextDouble();
+		produto.setPreco(valor);
 		
+		System.out.println(produto);
 		
-		
-		System.out.print(produto);
-		
-		sc.close();
 		
 	}
 
