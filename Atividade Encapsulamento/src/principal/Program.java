@@ -10,25 +10,27 @@ public class Program {
 		// TODO Auto-generated method stub
 
 		Scanner sc = new Scanner (System.in);
-		Produto produto = new Produto ();
+
 		
 		
 		System.out.print("Descrição: ");
-		produto.setDescricao(sc.nextLine());
+		String desc = sc.nextLine();
+		
+		//produto.setDescricao(sc.nextLine());
 		
 		System.out.print("Quantidade: ");
 		int qtde = sc.nextInt();
-		produto.adicionar(qtde); 
-		produto.remover(qtde); 
-		
+		//produto.adicionar(qtde); 
+			
 		
 		System.out.print("Preço: ");
 		double valor = sc.nextDouble();
-		produto.setPreco(valor);
+		//produto.setPreco(valor);
 		
+		Produto produto = new Produto (desc, valor, qtde);
 		System.out.println(produto);
 		
-		
+		sc.close();
 	}
 
 }

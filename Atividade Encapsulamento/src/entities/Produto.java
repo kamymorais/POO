@@ -5,7 +5,26 @@ public class Produto {
 	private String descricao ;
 	private double preco;
 	private int quantidade;
-	private double valorTotal ;
+	
+		
+	public Produto() {
+		super();
+		// Não obrigada a passar nada
+	}
+		
+	
+		
+	public Produto(String descricao, double preco, int quantidade) {
+		super();
+		this.descricao = descricao;
+		this.preco = preco;
+		this.quantidade = quantidade;
+		
+		//Obrigada a passar algo
+	}
+
+
+
 	public String getDescricao() {
 		return descricao;
 	}
@@ -21,13 +40,8 @@ public class Produto {
 	public int getQuantidade() {
 		return quantidade;
 	}
-	public void setQuantidade(int quantidade) {
-		this.quantidade = quantidade;
-	}
-	public void setValorTotal(double valorTotal) {
-		this.valorTotal = valorTotal;
-	}
 	
+		
 	public void adicionar (int qtde) {
 		this.quantidade += qtde ;
 	}

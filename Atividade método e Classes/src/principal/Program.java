@@ -25,6 +25,7 @@ public class Program {
 
 		System.out.println("A área é de: " + area.areaTotal);
 
+		sc.close();
 	}
 
 }
