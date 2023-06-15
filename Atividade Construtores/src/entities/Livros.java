@@ -1,6 +1,12 @@
 package entities;
 
 public class Livros {
+	/* Ordem sugerida a seguir na classe
+	 * 1º Atributos da classe
+	 * 2º Construtores
+	 * 3º Métodos get e set
+	 * 4º demais métodos 
+	 */
 	
 	private String nome;
 	private String titulo ;
